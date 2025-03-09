@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: pawkoz
+
+my:
+  custom:
+    property: "Hello from application properties"
