@@ -1,6 +1,4 @@
-package pl.edu.pjwstk.s30900.pawkoz;
-
-import org.springframework.stereotype.Component;
+package pl.edu.pjwstk.s30900.pawkoz.L1;
 
 public class MyFirstComponentXML {
     public MyFirstComponentXML() {

@@ -1,8 +1,6 @@
-package pl.edu.pjwstk.s30900.pawkoz;
+package pl.edu.pjwstk.s30900.pawkoz.L2;
 
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.ConfigurationProperties;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration

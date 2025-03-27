@@ -1,4 +1,4 @@
-package pl.edu.pjwstk.s30900.pawkoz;
+package pl.edu.pjwstk.s30900.pawkoz.L1;
 
 import org.springframework.stereotype.Component;
 

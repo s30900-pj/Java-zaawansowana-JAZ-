@@ -9,10 +9,10 @@
          https://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Definicja beana dla MyFirstComponent -->
-    <bean id="myFirstComponent" class="pl.edu.pjwstk.s30900.pawkoz.MyFirstComponent"/>
+    <bean id="myFirstComponent" class="pl.edu.pjwstk.s30900.pawkoz.L1.MyFirstComponent"/>
 
     <!-- Definicja beana dla MySecondComponent z wstrzyknięciem MyFirstComponent w konstruktorze -->
-    <bean id="mySecondComponent" class="pl.edu.pjwstk.s30900.pawkoz.MySecondComponent">
+    <bean id="mySecondComponent" class="pl.edu.pjwstk.s30900.pawkoz.L1.MySecondComponent">
         <constructor-arg ref="myFirstComponent"/>
     </bean>
 

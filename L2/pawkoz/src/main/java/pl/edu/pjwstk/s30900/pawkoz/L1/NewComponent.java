@@ -1,4 +1,4 @@
-package pl.edu.pjwstk.s30900.pawkoz;
+package pl.edu.pjwstk.s30900.pawkoz.L1;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -11,17 +11,14 @@ public class NewComponent {
     public NewComponent(ApplicationContext applicationContext) {
         this.applicationContext = applicationContext;
 
-        // Pobieramy beany z kontekstu
         MyFirstComponent myFirstComponent =
                 applicationContext.getBean("myFirstComponent", MyFirstComponent.class);
         MySecondComponent mySecondComponent =
                 applicationContext.getBean("mySecondComponent", MySecondComponent.class);
 
-        // Wywołujemy metody z MyFirstComponent
         myFirstComponent.printHelloMessage();
         myFirstComponent.printFirstComponentAndClassName();
 
-        // Wywołujemy metodę z MySecondComponent
         mySecondComponent.printSecondComponentAndClassName();
     }
 }
