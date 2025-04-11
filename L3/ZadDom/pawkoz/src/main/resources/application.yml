@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: "tesowanie"
+
+app:
+  environment: "staging"
+
+my:
+  custom:
+    property: "Hello from application properties"
+    login-url: "test-login"
+    credentials:
+      user: "test-user"
+      password: "pass"
