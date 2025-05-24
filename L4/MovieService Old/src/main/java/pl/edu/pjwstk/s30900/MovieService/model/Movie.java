@@ -1,19 +1,12 @@
 package pl.edu.pjwstk.s30900.MovieService.model;
 
-import jakarta.persistence.*;
-
-@Entity
-@Table(name = "movie")
 public class Movie {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
     private String category;
-    private Integer year;
-    private Double  rating;
-
+    private int year;
+    private double rating;
 
     public Movie() {
     }

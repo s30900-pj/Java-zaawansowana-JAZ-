@@ -41,28 +41,4 @@ public class MovieController {
             return ResponseEntity.badRequest().build();
         }
     }
-    @PutMapping("/{id}")
-    public ResponseEntity<Movie> updateMovie(
-            @PathVariable Long id,
-            @RequestBody Movie movie) {
-
-        try {
-            Movie updated = movieService.updateMovie(id, movie);
-            if (updated == null) {
-                return ResponseEntity.notFound().build();          // 404
-            }
-            return ResponseEntity.ok(updated);                     // 200
-        } catch (IllegalArgumentException ex) {
-            return ResponseEntity.badRequest().build();            // 400
-        }
-    }
-    @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteMovie(@PathVariable Long id) {
-        boolean removed = movieService.deleteMovie(id);
-
-        if (removed) {
-            return ResponseEntity.noContent().build();
-        }
-        return ResponseEntity.notFound().build();
-    }
 }
